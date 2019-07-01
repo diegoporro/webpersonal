@@ -1,0 +1,106 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Portfolio{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/860x394.jpg' %}{% endblock %}
+
+{% block localtime %}
+    {{ localtime }}
+{% endblock %}
+
+{% block headers %}
+<h1>Portafolio</h1>
+<span class="subheading">Currículo</span>
+{% endblock %}
+
+{% block content %}
+    <h2>Proyectos involucrados:</h2>
+    <div class="row project">
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+            <img class="img-fluid" src="{% static 'core/img/Migtel fondo transparente.png' %}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+            <h2 class="section-heading title">Segundo proyecto</h2>
+            <h4 class="text-muted -italic"><i>Sistema administrativo de manejo de clientes</i></h4>
+            <p>Sistema desarrollado para la empresa Comunicaciones Migtel C.A. Desarrollado para administrar los clientes que posee
+                dicha empresa, ademas de contar con un modulo estadistico y grafico con los datos de los clientes y un modulo de proyecciones.</p></div>
+    </div>
+    <!-- Proyecto -->
+    <div class="row project">
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+            <img class="img-fluid" src="{% static 'core/img/itssca.jpg' %}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+            <h2 class="section-heading title">Primer proyecto</h2>
+            <h4 class="text-muted -italic"><i>Servidor de Notificaciones Push</i></h4>
+            <p>Sistema desarrollado para la empresa IT Security Solutions C.A. Desarrollado para añadir un servidor de notificaciones
+                push a las aplicaciones desarrolladas en la empresa, contando con un modulo estadistico y grafico para las mismas.</p>
+        </div>
+    </div>
+    <h2>Cursos realizados:</h2>
+    <!-- Proyecto -->
+    <div class="row project">
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+            <img class="img-fluid" src="{% static 'core/img/Loscher.png' %}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+            <h2 class="section-heading title">Ingles</h2>
+            <h4 class="text-muted -italic"><i>Caracas, 20 de noviembre de 2015</i></h4>
+            <p>Instituto Loscher Ebbinghaus</p>
+        </div>
+    </div>
+    <div class="row project">
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+            <img class="img-fluid" src="{% static 'core/img/Certificado Coursera Pontificia Universidad Catolica de Chile.png' %}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+            <h2 class="section-heading title">Python</h2>
+            <h4 class="text-muted -italic"><i>03 de Septiembre de 2018</i></h4>
+            <p>Coursera - Pontificia Universidad Catolica de Chile</p>
+        </div>
+    </div>
+    <div class="row project">
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+            <img class="img-fluid" src="{% static 'core/img/CVA.jpg' %}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+            <h2 class="section-heading title">Ingles</h2>
+            <h4 class="text-muted -italic"><i>22 de Febrero de 2019</i></h4>
+            <p>Centro Venezolano Americano</p>
+        </div>
+    </div>
+    <div class="row project">
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+            <img class="img-fluid" src="{% static 'core/img/Certificado Google Activate Universidad de Alicante 1.png' %}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+            <h2 class="section-heading title">Desarrollo Web 1/2</h2>
+            <h4 class="text-muted -italic"><i>Marzo de 2019</i></h4>
+            <p>Google Activate - Universidad de Alicante</p>
+        </div>
+    </div>
+    <div class="row project">
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+            <img class="img-fluid" src="{% static 'core/img/Certificado Google Activate Universidad de Alicante 2.png' %}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+            <h2 class="section-heading title">Desarrollo Web 2/2</h2>
+            <h4 class="text-muted -italic"><i>Marzo de 2019</i></h4>
+            <p>Google Activate - Universidad de Alicante</p>
+        </div>
+    </div>
+    <div class="row project">
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+            <img class="img-fluid" src="{% static 'core/img/Udemy - Django.jpg' %}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+            <h2 class="section-heading title">Django</h2>
+            <h4 class="text-muted -italic"><i>12 de Abril de 2019</i></h4>
+            <p>Udemy</p>
+        </div>
+    </div>
+{% endblock %}
+
+{% block year %}
+    {{ year }}
+{% endblock %}

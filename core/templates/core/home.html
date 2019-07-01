@@ -1,0 +1,18 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/home-bg.jpg' %}{% endblock %}
+
+{% block localtime %}
+    {{ localtime }}
+{% endblock %}
+
+{% block headers %}
+<h1>Diego Porro</h1>
+<span class="subheading">Ingeniero Informatico</span>
+{% endblock %}
+
+{% block year %}
+    {{ year }}
+{% endblock %}

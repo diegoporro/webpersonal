@@ -1,0 +1,45 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Contacto{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/map.jpg' %}{% endblock %}
+
+{% block localtime %}
+    {{ localtime }}
+{% endblock %}
+
+{% block headers %}
+<h1>Contacto</h1>
+<span class="subheading">Asesoría y comunicacion</span>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+        <br>
+        <div class="col-md-8">
+        <span class="fa-stack fa-md">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
+        </span>+58 4141805263
+        </div><br>
+        <div class="col-md-8">
+        <span class="fa-stack fa-md">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+        </span>Diegoporro25@gmail.com
+        </div>
+        <hr>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <br>
+            <button class="btn btn-primary btn-block" type="submit">Conctact me!</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
+
+{% block year %}
+    {{ year }}
+{% endblock %}

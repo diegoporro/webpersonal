@@ -1,0 +1,35 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Acerca{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/prog2.jpg' %}{% endblock %}
+
+{% block localtime %}
+    {{ localtime }}
+{% endblock %}
+
+{% block headers %}
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+<div class="row"> 
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/avatar.png' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading text-primary">Diego Porro, {{ edad }} años</h2>
+        <p>Nacido en Caracas, Venezuela. Ingeniero Informatico egresado de la Universidad Alejandro de Humboldt 2013 - 2018.
+            Bilingüe, Español nativo e Ingles Avanzado. Desarrollo en Python 3, Django 2, HMTL5, CSS3, JavaScript y Bootstrap.
+        </p>
+        <p>
+            Trabajando actualmente como Desarrollador de soluciones web en la empresa IT Security Solutions C.A. {{ exp }} años de experiencia.
+        </p>
+    </div>
+</div>
+{% endblock %}
+
+{% block year %}
+    {{ year }}
+{% endblock %}
